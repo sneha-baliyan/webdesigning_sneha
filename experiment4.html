@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+    <h2>Hotel Room Booking Form</h2>
+    <form>
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Check-in Date -->
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required><br><br>
+
+        <!-- Check-out Date -->
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required><br><br>
+
+        <!-- Room Type -->
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype" required>
+            <option value="">--Select Room Type--</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <!-- Number of Guests -->
+        <label for="guests">No. of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required><br><br>
+
+        <!-- Special Requests -->
+        <label for="requests">Special Requests:</label><br>
+        <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Write any special request here..."></textarea><br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
