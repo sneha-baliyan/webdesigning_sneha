@@ -3,9 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazone</title>
+    <title>AMAZON</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{font-family: content: '\f033';}
+        p{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;}
+        header{ 
+            background-color: aquamarine:
+            padding: 20px;
+            text-align:center;
+            box-shadow: 0 2px 5px 
+        }
+        header img{
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px
+        }
+        nav a{
+            text-align: center;
+            padding: 15px;
+        }
+        main{padding: 30px;
+        max-width: 1200px;
+        margin:0 auto;
+        }
+        .row{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+            margin-bottom: 0;
+        }
+            .category-section{margin-bottom: 0;
+        }
+        .category-title{
+            font-size:24px;
+            margin-bottom:20px;
+            color:blueviolet;
+            text-transform:uppercase;
+        }
+        .product-grid{
+            display: grid;
+            grid-template-column:repeat(2,1fr);
+            gap: 20px;
+        }
+        .product item{
+            background-color: azure;
+            padding: 15px;
+            border-radius:8px;
+            box-shadow:0 2px 8px
+            text-align:center;
+        }
+        .highlight{
+            color:aquamarine;
+            font-weight: bold;
+        }
+        
+    </style>
 </head>
 <body>
+    <h1>
+    <img src="https://www.bing.com/th/id/OIP._dqGsNuOy_wZqGf27WlbSAHaDU?w=370&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="300" width="1500">
+    </h1>
+    <!--nav-->
+    <p align="center">
+    <a href="#laptops"> laptops </a>
+   <select id="laptop" value="laptop"></option>
+            <option>select item</option>
+            <option value="acer aspire lite">acer aspire lite</option>
+            <option value="lenovo idea pad">lenovo idea pad</option>
+            <option value="mac book">mac book</option>
+            <option value="dell">dell</option>
+        </select> <label for="laptop"></label>|
+
+
+    <a href="#washing machine">washing machine</a>|
+    <select id="washing machine" value="washing machine"></option>
+            <option>select item</option>
+            <option value="lg front load">lg front load</option>
+            <option value="samsung top load">samsung top load</option>
+            <option value="whirpool fully automatic">whirpool fully automatic</option>
+            <option value="bosch front load">bosch front load</option>
+        </select> <label for="washing machine"></label>|
+
+
+    <a href="#cars">cars</a>
+    <select id="cars" value="cars"></option>
+            <option>select item</option>
+            <option value="tesla model 3">tesla model 3</option>
+            <option value="tata nexon ev">tata nexon ev</option>
+            <option value="hyundai ioniq 5">hyundai ioniq 5</option>
+            <option value="mg zs ev">mg zs ev</option>
+        </select> <label for="cars"></label>|
+
+
+    <a href="#tv">tv</a>
+    <select id="tv" value="tv"></option>
+            <option>select item</option>
+            <option value="samsung smart tv">samsung smart tv</option>
+            <option value="sony bravia">sony bravia</option>
+            <option value="one plus smart tv"> one plus smart tv</option>
+            <option value="mi smart tv">mi smart tv</option>
+        </select> <label for="tv"></label>|
+    </p>
+    <table width="45%" border="2" cellpadding="40" cellspacing="10">
+        <tr>
+            <th>acer aspire lite
+                <img src="https://www.bing.com/th/id/OIP.VYj9m_83UMD3nis6Ko3OSwHaFX?w=264&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="laptop" height="200" width="200">
+            </th>
+            <th>lenovo idea pad
+                <img src="https://www.bing.com/th/id/OIP.yZORTJRaWpsyFGtC_U0A5QHaFj?w=281&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="laptop2" width="200" height="200">
+            </th>
+        </tr>
+        <tr>
+            <th>mac book
+                 <img src="https://www.bing.com/th/id/OIP.LPI1h8BOVhlWn5zrQbPS3gHaEq?w=273&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="laptop3" width="200" height="200">
+            </th>
+            <th>dell
+                 <img src="https://www.bing.com/th/id/OIP.Gqhlz-lNZxUAkshxqKU0cwHaHa?w=204&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="laptop4" width="200" height="200">
+            </th>
+        </tr>
+    </table>
+    <table width="45%" border="2" cellpadding="40" cellspacing="10" >
+        <tr style="height: 100px;">
+            <th>LG front load 
+                <img src="https://mobileimages.lowes.com/productimages/eb41152c-d483-4e18-b755-d1d5fca93536/03390399.jpg" alt="wm1" height="200" width="200">
+            </th>
+            <th>Samsung top load 
+                <img src="https://www.bing.com/th/id/OIP.ABw4CEVUb-pa2yPv1ttH8gHaFj?w=232&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm2" width="200" height="200">
+            </th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>Whirpool fully automatic
+                 <img src="https://www.bing.com/th/id/OIP.lzld87lMxjN438h13rXiOAHaLH?w=176&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm3" width="200" height="200">
+            </th>
+            <th>Bosch front load 
+                 <img src="https://www.bing.com/th/id/OIP.o9_gCD5N-AoRxSWjrT230gHaGv?w=247&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm4" width="200" height="200">
+            </th>
+        </tr>
+    </table>
+     <table width="45%" border="2" cellpadding="40" cellspacing="10" >
+        <tr style="height: 100px;">
+            <th>tesla model 3
+                <img src="https://www.bing.com/th/id/OIP.w3Z8CEJ63c2BuHIfPb3TBwHaEK?w=221&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm1" height="200" width="200">
+            </th>
+            <th>tata nexon ev
+                <img src="https://www.bing.com/th/id/OIP.8th3kJ235mgo32XgVXBVXwHaEK?w=258&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm2" width="200" height="200">
+            </th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>hyundai ioniq 5
+                 <img src="https://www.bing.com/th/id/OIP.lH8EtE0Tgqgcb-uGa904AAHaEx?w=260&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm3" width="200" height="200">
+            </th>
+            <th>mg zs ev 
+                 <img src="https://www.bing.com/th/id/OIP.ebWOepDC-5AnoXvuQAczMwHaEo?w=245&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="car" width="200" height="200">
+                 
+            </th>
+        </tr>
+    </table>
+    <table width="45%" border="2" cellpadding="40" cellspacing="10" >
+        <tr style="height: 100px;">
+            <th>samsung smart TV
+                <img src="https://www.bing.com/th/id/OIP.A-pADhjnjMA-sHt8EuKWFwHaGs?w=224&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm1" height="200" width="200">
+            </th>
+            <th>Sony Bravia 
+                <img src="https://www.bing.com/th/id/OIP.VgNntc7Y_g5ncK26tTmyQAHaGe?w=210&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm2" width="200" height="200">
+            </th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>one plus smart TV 
+                 <img src="https://www.bing.com/th/id/OIP.HFZEmTDPzgmHOUu6_vJPEQHaEK?w=316&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm3" width="200" height="200">
+            </th>
+            <th>MI smart TV 
+                 <img src="https://www.bing.com/th/id/OIP.I1MVWxgYyK9jOc4DzUTm9gHaEt?w=290&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="wm4" width="200" height="200">
+                 
+            </th>
+        </tr>
+    </table>
+
     
 </body>
 </html>
