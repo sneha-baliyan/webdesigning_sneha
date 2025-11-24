@@ -1,0 +1,84 @@
+/* General Setup and Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.navigation-container {
+    width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    border: 1px solid #000; /* Outer black border */
+    background-color: #fff; /* White background for the main content area */
+}
+
+/* Header Styling (Gray Area) */
+.nav-header {
+    background-color: lightgray;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-header h1 {
+    font-size: 16px;
+    margin: 0;
+    color: #333; /* Darker text color */
+}
+
+.website-word {
+    color: red; /* 'Website' in red */
+}
+
+/* Navigation Menu Layout */
+.nav-menu {
+    padding: 1px; /* Inner padding */
+    width: 300px
+}
+
+.nav-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 5px 0; /* Vertical space between rows */
+    display: flex; /* Arrange links horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+.nav-list li {
+    /* Style for the container around the link */
+    flex-grow: 1; /* Make buttons grow to fill the space */
+    text-align: center;
+}
+
+/* Link (Button) Styling */
+.nav-list a {
+    display: block; /* Make the entire area clickable */
+    padding: 4px 7px;
+    text-decoration: none;
+    color: #333;
+    border: 1px ; /* Button border */
+    border-radius: 3px; /* Slightly rounded corners */
+    font-size: 14px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Blue Buttons */
+.blue-links a {
+    background-color: lightblue; /* Light blue background */
+
+}
+
+.blue-links a:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+/* Green Buttons */
+.green-links a {
+    background-color: lightgreen; /* Light green background */
+    
+}
+
+.green-links a:hover {
+    background-color: darkgreen;
+    color: white;
+}
