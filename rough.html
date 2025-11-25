@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+  }
+
+  .square {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  .red    { background: red;    width: 300px; height: 300px; }
+  .blue   { background: blue;   width: 240px; height: 240px; }
+  .green  { background: green;  width: 180px; height: 180px; }
+  .yellow { background: gold;   width: 120px; height: 120px; color: black; }
+  .purple { background: purple; width:  60px; height:  60px; }
+</style>
+</head>
+
+<body>
+  <div class="square red">
+    RED
+    <div class="square blue">
+      BLUE
+      <div class="square green">
+        GREEN
+        <div class="square yellow">
+          YELLOW
+          <div class="square purple">
+            PURPLE
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

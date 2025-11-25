@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested div</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .square{
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .box1{
+            height:500px;
+            width:500px;
+            background-color: red;
+        }
+        .box2{
+            height:400px;
+            width:400x;
+            background-color: orange;
+        }
+        .box3{
+            height:300px;
+            width: 300px;
+            background-color: yellow;
+        }
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+        }
+        .box5{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+        }
+        .text{
+            align-content: center;
+            justify-content: center;
+            font-family: 'Gill Sans';
+            font-size: medium;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="square box1" >
+        <div class="text">CSS model</div>
+        <div  class="square box2">
+            <div class="text">Margin</div>
+            <div class="square box3">
+                <div class="text">Border</div>
+                <div class="square box4">
+                    <div class="text">Padding</div>
+                    <div class="square box5">
+                        <div class="text">Content</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
