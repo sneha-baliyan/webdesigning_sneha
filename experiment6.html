@@ -3,74 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEasy</title>
+    <title>ShopEasy - Online Shopping</title>
     <style>
-        body{
-            font-family:Arial;
-            background-color:aliceblue;
-            text-align:center;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-        .container{
-        background-color: white;
-        width:350px;
-        padding:200px;
-        border-radius: 20px;
-        text-align: center;
+        
+        .header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
         }
-        h1{
-        background-color:black;
-        color:aliceblue;
-        padding:10px;
+        
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: #ffffff;
         }
-
-        product{
-        width:300px;
-        background-color: aliceblue;
-        margin:30px auto;
-        border: 1px solid gray;
-        padding:10px;
+        
+        .card {
+            background: rgb(206, 200, 200);
+            width: 300px;
+            margin: 0 auto;
+            padding: 30px;
+            border-style:solid;
+            border-radius: 10px;
+            
         }
-
-        img{
-        width: 200px;
-        height:150px;
+        
+        .tshirt-img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            
         }
-
-        price{
-        color:green;
-        font-weight:bold;
+        
+        .tshirt-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            
         }
-        .oldprice{
-        text-decoration: line-through;
-        color: gray;
+        
+        h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
         }
-
-        button{
-        background-color:blue;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
+        
+        p {
+            color: #666;
+            font-size: 14px;
+            margin: 0 0 15px 0;
         }
-
-        button:hover{
-        background-color: darkblue;
+        
+        .price {
+            font-size: 18px;
+            color: #2d7d32;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .old-price {
+            color: #999;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        
+        button {
+            background: #1976d2;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        button:hover {
+            background: #1565c0;
+        }
+        .border {
+            margin: 2px;
         }
     </style>
 </head>
 <body>
+    <div class="border">
+    <div class="header">ShopEasy</div>
     <div class="container">
-    <h1>ShopEasy</h1>
-
-    <div class="product">
-       
-       <img src="https://media.istockphoto.com/id/1209887384/photo/green-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=8M4gaRs-fUz6CdYEl4OblIoDvNjcRs8_Sbzs0VxWlMY=" > <br><br>
-       <h3>Classic Cotton T-Shirt</h3>
-       <p>Soft,breathable cotton.Regular fit</p>
-       <p class="price"> Rs799 <span class="oldprice"> Rs1199</span></p>
-       <button>Add to cart</button>
+        <div class="card">
+            <div class="tshirt-img">
+                <img src="https://media.istockphoto.com/id/1209887384/photo/green-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=8M4gaRs-fUz6CdYEl4OblIoDvNjcRs8_Sbzs0VxWlMY=" alt="Green T-Shirt">
+            </div>
+            <h3>Classic Cotton T-Shirt</h3>
+            <p>Soft, breathable cotton. Regular fit. Available in multiple colors</p>
+            <div class="price">
+                ₹799 <span class="old-price">₹1,199</span>
+            </div>
+            <button>Add to Cart</button>
+        </div>
     </div>
-    </div>
-  
+</div>
+<hr>
+<p><b>sneha baliyan [2025b15410144]</b></p>
 </body>
 </html>
